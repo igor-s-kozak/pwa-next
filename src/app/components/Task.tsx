@@ -45,7 +45,7 @@ export const Task = ({ task }: { task: ITask }) => {
                         </div>
                     </form>
                 </Modal>
-                <FiTrash2 title='Delete item' onClick={function onClickTrash() { deleteTodo(task.id); router.refresh() }} className='text-red-500' cursor='pointer' size={25} />
+                <FiTrash2 title='Delete item' onClick={() => { deleteTodo(task.id); router.refresh() }} className='text-red-500' cursor='pointer' size={25} />
             </td>
         </tr>
     )
